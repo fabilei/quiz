@@ -1,0 +1,22 @@
+#AddType application/vnd.ms-fontobject    .eot
+#AddType application/x-font-opentype      .otf
+#AddType image/svg+xml                    .svg
+#AddType application/x-font-ttf           .ttf
+#AddType application/font-woff            .woff
+#AddType application/font-woff2           .woff2
+
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ index.php?$1
+
+#Options -Indexes
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|new\.txt)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|uploads|questao|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
