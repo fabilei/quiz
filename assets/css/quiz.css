@@ -1,0 +1,85 @@
+.classificados {
+  position:absolute;
+  float:right;
+  top:285px;
+  right:0px;
+  width:250px;
+  height:1180px;
+  background-color:gray;
+  clear:both;
+}
+
+.forum{
+  position:absolute;
+  float:left;
+  top:285px;
+  left:0px;
+  width:250px;
+  height:1180px;
+  background-color:gray;
+  clear:both;
+}
+
+.image img {
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.zoom:hover {
+-webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
+}
+
+/* menu */
+
+.menu,
+.sub-menu {
+  list-style: none;
+  margin-left:5%;
+}
+.sub-menu {
+  z-index:10;
+  background: #495bb3;
+  left:70%;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.li_sub_menu{
+  color: #FFF;
+  margin-left:5%;
+}
+.mega-menu li{
+  position: relative;
+}
+.mega-menu > li {
+  float: left;
+}
+.mega-menu > li:hover{
+  background: #444;
+}
+.mega-menu li:hover > .sub-menu  {
+  display: block;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+}
+
+.sub-menu li:hover {
+  background: green;
+}
